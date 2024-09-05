@@ -8,7 +8,7 @@ import numpy as np
 from matplotlib import colors
 
 # Path to the Keras model
-model_path = "./model"
+model_path = "./resnet34_fpn_0.5v2_jaccard_loss_augTrue.tf"
 
 # Input dimensions expected by your Keras model
 MODEL_INPUT_WIDTH = 256
