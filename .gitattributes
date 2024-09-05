@@ -1,0 +1,2 @@
+resnet34_fpn_0.5v1_jaccard_loss_augFalse.tf/variables/variables.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+resnet34_fpn_0.5v2_jaccard_loss_augTrue.tf/variables/variables.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
