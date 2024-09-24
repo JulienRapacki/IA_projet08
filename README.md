@@ -30,7 +30,7 @@ Copyresnet34_fpn_0.5v2_jaccard_loss_augTrue.tf
 ## Utilisation
 
 Démarrez le serveur Flask :
-Copypython app.py
+app.py
 
 L'API sera accessible à l'adresse http://localhost:5000
 
@@ -41,7 +41,7 @@ Routes
 
 Exemple d'utilisation
 Pour segmenter une image, envoyez une requête POST à /predict_mask avec l'image dans le corps de la requête :
-pythonCopyimport requests
+import requests
 
 url = "http://localhost:5000/predict_mask"
 files = {"image": open("chemin/vers/votre/image.jpg", "rb")}
