@@ -1,14 +1,14 @@
-#IA PROJET 8
+# IA PROJET 8
 
 Cette API utilise un modèle de deep learning pour effectuer la segmentation sémantique d'images. Elle est construite avec Flask et TensorFlow.
 
-##Fonctionnalités
+## Fonctionnalités
 
 Segmentation sémantique d'images
 Utilisation d'un modèle ResNet34 FPN pré-entraîné
 Génération de masques de segmentation colorés
 
-##Prérequis
+## Prérequis
 
 Python 3.x
 Flask
@@ -17,7 +17,7 @@ Pillow
 NumPy
 Matplotlib
 
-##Installation
+## Installation
 
 Clonez ce dépôt
 Installez les dépendances :
@@ -27,7 +27,7 @@ Assurez-vous que le modèle pré-entraîné est présent dans le répertoire du 
 Copyresnet34_fpn_0.5v2_jaccard_loss_augTrue.tf
 
 
-##Utilisation
+## Utilisation
 
 Démarrez le serveur Flask :
 Copypython app.py
@@ -56,7 +56,7 @@ Le modèle prédit un masque de segmentation.
 Le masque est converti en une image RGB colorée.
 L'image résultante est renvoyée au client.
 
-##Classes de segmentation
+## Classes de segmentation
 
 0 : void (vide)
 1 : flat (plat)
@@ -67,7 +67,7 @@ L'image résultante est renvoyée au client.
 6 : human (humain)
 7 : vehicle (véhicule)
 
-##Remarques
+## Remarques
 
 Le modèle utilisé est resnet34_fpn_0.5v2_jaccard_loss_augTrue.tf.
 Les dimensions d'entrée du modèle sont fixées à 256x128 pixels.
