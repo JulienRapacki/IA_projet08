@@ -41,6 +41,7 @@ Routes
 
 Exemple d'utilisation
 Pour segmenter une image, envoyez une requête POST à /predict_mask avec l'image dans le corps de la requête :
+```
 import requests
 
 url = "http://localhost:5000/predict_mask"
@@ -49,6 +50,8 @@ response = requests.post(url, files=files)
 
 with open("masque_segmentation.png", "wb") as f:
     f.write(response.content)
+```
+
 Fonctionnement
 
 L'image est redimensionnée à 256x128 pixels (taille d'entrée du modèle).
